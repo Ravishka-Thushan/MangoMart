@@ -1,0 +1,22 @@
+#header,.links{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1em 0;
+    gap: 0.5em;  
+  }
+  .links a{
+    text-decoration: none;
+    color: rgb(166, 6, 6);
+    transition: 300ms;
+    background-color: ease-in-out;
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+  }
+  #header,.links.active a{
+    border-bottom: 4px solid rgb(166, 6, 6); 
+  }
+  #header,.links a:hover{
+    text-decoration: none;
+    border-bottom: 4px solid rgb(166, 6, 6);
+  }

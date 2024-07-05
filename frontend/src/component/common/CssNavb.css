@@ -1,0 +1,77 @@
+.logo {
+    height: 6em;
+    padding: 3px;
+    will-change: filter;
+    transition: filter 300ms;
+    align-items: first baseline;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em rgb(166, 6, 6));
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em rgb(166, 6, 6));
+}
+.basket .dot{
+  position: relative;
+  top: -32px;
+  right: -30px;
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.sign-in-button {
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #701011;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sign-in-button:hover {
+    background-color: #49B403;
+    color: #ffffff;
+}
+.login-btn{
+    border-radius: 9999px;
+    width: 2rem;
+    height: 2rem;
+    background-color: #f8f9fa;
+    color: #9b2c2c;
+    font-size: 1.875rem;
+}
+.nav-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.login-btn:hover .nav-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fff2ef;
+    padding: 12px 15px;
+    border-radius: 4px;
+    border: 1px solid #49B403;
+    outline: 2px solid white;
+    list-style: none;
+}
+.nav-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-dropdown button{
+    width: 30px;
+    color: #701011;
+}
+.nav-dropdown li:hover{
+    color:#49B403;
+}

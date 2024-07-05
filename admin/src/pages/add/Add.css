@@ -1,0 +1,101 @@
+/*.addMangoes{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 30px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.addMangoes form{
+    gap: 20px;
+}
+.add-img-upload img{
+    width: 150px;
+}
+.add-mango-name, .add-mango-price{
+    width: max(40% 20px);
+}
+.add-mango-name input, .add-mango-price input{
+    padding: 10px;
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: #FF7700;
+    color: black;
+    cursor: pointer;
+}*/
+
+/* Add.css */
+
+.addMangoes {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 30px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addMangoes form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #a9a9a9;
+    border-radius: 8px;
+}
+.flex-col .title{
+    font-size: 30px;
+    color: #49B403;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-img-upload p {
+    margin-bottom: 10px;
+}
+
+.add-img-upload img {
+    width: 150px;
+    border: 1px solid #a9a9a9;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-mango-name, .add-mango-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-mango-name input, .add-mango-price input {
+    padding: 10px;
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+}
+
+.add-btn {
+    max-width: 220px;
+    border: none;
+    padding: 10px;
+    background-color: #FF7700;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: center;
+}
+
+  

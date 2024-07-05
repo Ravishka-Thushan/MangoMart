@@ -1,0 +1,47 @@
+.header-background {
+    background-image: url('../../assets/bg6.jpg'); /* Replace with your actual image path */
+    background-size: 100% 100%;
+    background-position: center;
+    filter: blur(0px); /* Adjust the blur effect */
+    height: 80vh; /* Ensure it covers the entire container */
+    width: 100%;  /* Ensure it covers the entire container */
+    position: relative; /* Position it absolutely */
+    background-position-x: center;
+    z-index: -1; /* Ensure it is behind other content */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*#aj-banner-section {
+    background: url(../images/banner-bg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    background-position-x: center;
+}*/
+
+
+h1.aj-page-title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #49B403;
+    -webkit-text-stroke: 1px #fff; /* White stroke around the text */
+    position: relative;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    animation: fadeIn 3s;
+}
+
+p.aj-banner-feature-content {
+    margin-bottom: 14px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 800;
+    -webkit-text-stroke: .25px #fff; /* White stroke around the text */
+    animation: fadeIn 3s;
+}
+
+  
+  
