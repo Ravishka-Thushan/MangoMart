@@ -13,9 +13,20 @@ function MyOrders() {
   const [data,setData] = useState([]);
 
   const fetchOrders = async () => {
-    const response = await axios.get(`${url}/api/order/userorders`, { headers: { token }})
-    setData(response.data.data);
-  }
+    try {
+      const response = await axios.get(`${url}/api/order/userorders`, {
+        headers: { token },
+      });
+      if (response.data.success) {
+        setData(response.data.data);
+      } else {
+        console.error(response.data.message);
+      }
+    } catch (error) {
+      console.error("Error fetching orders:", error);
+    }
+  };
+  
   useEffect(()=>{
     if (token) {
       fetchOrders();
@@ -33,18 +44,18 @@ function MyOrders() {
         return(
           <div key={index} className="my-orders-order">
             <img src={assets.parcel} alt="" />
-            <p>{order.items.map((items,index)=>{
-              if(index === order.items.length-1){
-                return items.name+" x "+items.quantity+"Kg"
+            <p>{order.items.map((items,itemIndex)=>{
+              if(itemIndex === order.items.length-1){
+                return items.name+" x "+items.quantity+"Kg";
               }
               else{
-                return items.name+" x "+items.quantity+"Kg"+","
+                return items.name+" x "+items.quantity+"Kg"+",";
               }
             })}</p>
             <p>Rs.{order.amount}.00</p>
             <p>Items: {order.items.length} </p>
             <p><span><GrStatusGoodSmall /></span> <b>{order.status}</b></p>
-            <button>Track Order</button>
+            <button onClick={fetchOrders}>Track Order</button>
           </div>
         )
       })}
